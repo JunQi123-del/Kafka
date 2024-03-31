@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a550540-9898-430a-b3c1-dcbd99f2ab9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/common/constants/KafkaConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/io/demos/kafka/ConsumerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/io/demos/kafka/ConsumerDemoGracefulShutdown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/io/demos/kafka/ProducerDemoKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/io/demos/kafka/producerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="2a550540-9898-430a-b3c1-dcbd99f2ab9b" name="Changes" comment="kafka-consumer and producer practice">
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/io/demos/kafka/ConsumerDemoWithCooperative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/common/constants/KafkaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/common/constants/KafkaConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/io/demos/kafka/ConsumerDemoGracefulShutdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/io/demos/kafka/ConsumerDemoGracefulShutdown.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,20 +76,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.ConsumerDemoGracefulShutdown">
-    <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ConsumerDemo" />
-      <module name="Kafka-beginner.kafka-basics.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.demos.kafka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerDemoGracefulShutdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerDemoGracefulShutdown (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ConsumerDemoGracefulShutdown" />
       <module name="Kafka-beginner.kafka-basics.main" />
       <extension name="coverage">
@@ -118,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerDemoKey (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ProducerDemoKey" />
+    <configuration name="ConsumerDemoGracefulShutdown (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ConsumerDemoGracefulShutdown" />
       <module name="Kafka-beginner.kafka-basics.main" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerDemoKey" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ProducerDemoKey" />
+    <configuration name="ConsumerDemoGracefulShutdown (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ConsumerDemoGracefulShutdown" />
       <module name="Kafka-beginner.kafka-basics.main" />
       <extension name="coverage">
         <pattern>
@@ -144,8 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="producerDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.producerDemo" />
+    <configuration name="ConsumerDemoGracefulShutdown" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ConsumerDemoGracefulShutdown" />
       <module name="Kafka-beginner.kafka-basics.main" />
       <extension name="coverage">
         <pattern>
@@ -157,13 +128,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerDemoWithCooperative" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.demos.kafka.ConsumerDemoWithCooperative" />
+      <module name="Kafka-beginner.kafka-basics.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.demos.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConsumerDemoWithCooperative" />
+      <item itemvalue="Application.ConsumerDemoGracefulShutdown" />
+      <item itemvalue="Application.ConsumerDemoGracefulShutdown (1)" />
+      <item itemvalue="Application.ConsumerDemoGracefulShutdown (2)" />
+      <item itemvalue="Application.ConsumerDemoGracefulShutdown (3)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConsumerDemoGracefulShutdown" />
-        <item itemvalue="Application.ConsumerDemo" />
-        <item itemvalue="Application.ProducerDemoKey" />
-        <item itemvalue="Application.ProducerDemoKey (1)" />
-        <item itemvalue="Application.producerDemo (2)" />
+        <item itemvalue="Application.ConsumerDemoWithCooperative" />
+        <item itemvalue="Application.ConsumerDemoGracefulShutdown (3)" />
+        <item itemvalue="Application.ConsumerDemoGracefulShutdown (2)" />
+        <item itemvalue="Application.ConsumerDemoGracefulShutdown (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +167,14 @@
       <option name="presentableId" value="Default" />
       <updated>1710753111543</updated>
     </task>
+    <task id="LOCAL-00001" summary="kafka-consumer and producer practice">
+      <created>1711866562718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711866562718</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,5 +187,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="kafka-consumer and producer practice" />
+    <option name="LAST_COMMIT_MESSAGE" value="kafka-consumer and producer practice" />
   </component>
 </project>

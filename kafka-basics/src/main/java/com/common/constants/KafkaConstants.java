@@ -20,5 +20,7 @@ public class KafkaConstants {
 
     public static final String Topic_ID = "java_demo";
 
+    public static final String Cooperative_Sticky_Assignor = "partition.assignment.strategy";
+
 
 }

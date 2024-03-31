@@ -3,6 +3,7 @@ package io.demos.kafka;
 import com.common.constants.KafkaConstants;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.CooperativeStickyAssignor;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.errors.WakeupException;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -14,9 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class ConsumerDemoGracefulShutdown {
+public class ConsumerDemoWithCooperative {
 
-    public static final Logger log = LoggerFactory.getLogger(ConsumerDemoGracefulShutdown.class.getSimpleName());
+    public static final Logger log = LoggerFactory.getLogger(ConsumerDemoWithCooperative.class.getSimpleName());
 
     public static void main(String[] args) {
         log.info("I am Kafka Consumer");
@@ -35,6 +36,7 @@ public class ConsumerDemoGracefulShutdown {
         property.setProperty(KafkaConstants.DeserializerValue, StringDeserializer.class.getName());
         property.setProperty(KafkaConstants.GroupIDProperty, KafkaConstants.groupID);
         property.setProperty(KafkaConstants.auto_Offset_Reset_Property, KafkaConstants.offset_property_Earliest);
+        property.setProperty(KafkaConstants.Cooperative_Sticky_Assignor, CooperativeStickyAssignor.class.getName());
 
         //create a kafka consumer
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(property);
@@ -62,7 +64,6 @@ public class ConsumerDemoGracefulShutdown {
 
             //poll for data
             while (true) {
-
 
                 //how long are we willing to wait to receive data
                 //if there is not data, it will wait 1sec to receive data from kafka
